@@ -15,5 +15,8 @@ source_code = html.fromstring(byte_data)
 
 tree = source_code.xpath(path)
 
+if len(tree) == 0 :
+	print ("Invlid Username ")
+
 for i in tree:
 	print i.text_content()
